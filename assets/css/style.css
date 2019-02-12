@@ -1,0 +1,62 @@
+.background {
+    background-image: url("../images/candycollage.jpg");
+}
+
+.center {
+    padding-top: 20px;
+}
+
+.page-title {
+    line-height: 100px;
+    text-align: center;
+    background-color: rgb(244, 248, 248);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: darkblue;
+    background-image: url("../images/topography.png");
+}
+
+.instructions {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    background-color: rgb(244, 248, 248);
+    background-image: url("../images/topography.png");
+}
+
+.gameboard-guess{
+    background-color:lightcyan;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid brown;
+    line-height: 150px;
+    font-weight: 500; 
+}
+
+.gameboard-letters-claimed {
+    background-color:lightcyan;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150px;
+    font-weight: 500; 
+}
+
+#winner-loser {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    background-color: rgb(244, 248, 248);
+    color: green;
+}
+
+#underscore {
+    font-size: 30px;
+}
+
+#winner-loser {
+    background-color: khaki;
+}

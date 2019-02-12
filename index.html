@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Word Guess Game</title>
+</head>
+
+<body class="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- page nav -->
+                <div class="page-title">
+                    Word Guess Game
+                </div>
+                <!-- Instructions -->
+                <div class="center">
+                    <div class="container">
+                        <div class="row instructions">
+                            <div class="col-12"></div>
+                            <div id="startkey">
+                                Press button to begin!
+                                <button type="button" class="btn btn-secondary" id="start-game">Start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Winner or Loser -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12" id="winner-loser">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gameboard -->
+                    <div class="container">
+                        <div class="row gameboard-guess">
+                            <!-- Guesses -->
+                            <div class="col-3">
+                                Guess the candy bar
+                            </div>
+                            <div class="col-6" id="underscore">
+                                <!-- underscores -->
+                            </div>
+                            <div class="col-3" id="winner">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Losses -->
+                    <div class="container">
+                        <div class="row gameboard-letters-claimed">
+                            <div class="col-3">
+                                Letters Claimed
+                            </div>
+                            <div class="col-6" id="used-letters">
+                                <!-- used letters -->
+                            </div>
+                            <div class="col-3" id="guesses-remaining">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js">  </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
