@@ -5,6 +5,7 @@ var userGuessArray = []; // the letters the user has pressed
 var loss = 0;
 var guesses = 10;
 
+
 var startGame = document.getElementById("start-game");
 startGame.onclick = function () {
     clear()
@@ -66,11 +67,10 @@ startGame.onclick = function () {
                 else {
                     document.getElementById("used-letters").innerHTML += userKey;
                     // adds to loss
-                    loss = 1
+                    loss = 1;
                 }
             }
             checkwinner()
-
         };
 
         //Checks for winner/loser and updates the counter and text
@@ -82,7 +82,6 @@ startGame.onclick = function () {
                 if (guesses < 1) {
                     document.getElementById("guesses-remaining").innerHTML = "LOST";
                     document.getElementById("winner-loser").innerHTML = "LOSER";
-
                 }
                 else {
                     document.getElementById("guesses-remaining").innerHTML = "Guesses Remaining: " + guesses;
