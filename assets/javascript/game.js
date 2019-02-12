@@ -7,15 +7,7 @@ var guesses = 10;
 
 var startGame = document.getElementById("start-game");
 startGame.onclick = function () {
-    //Clear variables
-    letterArray = [];
-    userGuessArray = [];
-    document.getElementById("underscore").innerHTML = "";
-    document.getElementById("used-letters").innerHTML = "";
-    document.getElementById("winner-loser").innerHTML = "";
-    document.getElementById("winner").innerHTML = "";
-    document.getElementById("guesses-remaining").innerHTML = "";
-    guesses = 10;
+    clear()
 
     // sets the guesses
     document.getElementById("guesses-remaining").innerHTML = "Guesses Remaining: " + guesses;
@@ -66,7 +58,7 @@ startGame.onclick = function () {
             }
             else {
                 // userkey not in letterArray so it becomes a used letter
-                console.log("key NOT in letterrarray FALSE");
+                // console.log("key NOT in letterrarray FALSE");
                 // checks for dupe
                 if (document.getElementById("used-letters").innerHTML.includes(userKey)) {
                     alert("You've used that letter. Try again.");
@@ -78,28 +70,42 @@ startGame.onclick = function () {
                 }
             }
             checkwinner()
+
         };
 
         //Checks for winner/loser and updates the counter and text
         function checkwinner() {
             if (userGuessArray.includes("_")) {
-                console.log(userGuessArray.includes("_") + "does include underscore userguessarray");
+                // console.log(userGuessArray.includes("_") + "does include underscore userguessarray");
                 guesses = guesses - loss;
                 // 
                 if (guesses < 1) {
                     document.getElementById("guesses-remaining").innerHTML = "LOST";
                     document.getElementById("winner-loser").innerHTML = "LOSER";
+
                 }
                 else {
                     document.getElementById("guesses-remaining").innerHTML = "Guesses Remaining: " + guesses;
                 }
             }
             else {
-                console.log(userGuessArray.includes("_") + "NOPE no underscore userguessarray");
+                // console.log(userGuessArray.includes("_") + "NOPE no underscore userguessarray");
                 document.getElementById("winner").innerHTML = "WINNER";
                 document.getElementById("winner-loser").innerHTML = "WINNER";
             }
         };
-
     };
+    function clear() {
+        //Clear variables
+        letterArray = [];
+        userGuessArray = [];
+        document.getElementById("underscore").innerHTML = "";
+        document.getElementById("used-letters").innerHTML = "";
+        document.getElementById("winner-loser").innerHTML = "";
+        document.getElementById("winner").innerHTML = "";
+        document.getElementById("guesses-remaining").innerHTML = "";
+        guesses = 10;
+    }
 };
+
+
