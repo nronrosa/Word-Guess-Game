@@ -41,6 +41,7 @@ startGame.onclick = function () {
             alert("ONLY letters allowed. Try again!");
         }
         else {
+
             var positions = [];
             //Find all the letters index in array
             for (var i = 0; i < letterArray.length; i++) {
@@ -68,6 +69,8 @@ startGame.onclick = function () {
                     document.getElementById("used-letters").innerHTML += userKey;
                     // adds to loss
                     loss = 1;
+                    // reduces # of guesses
+                    guesses = guesses - loss;
                 }
             }
             checkwinner()
@@ -77,7 +80,7 @@ startGame.onclick = function () {
         function checkwinner() {
             if (userGuessArray.includes("_")) {
                 // console.log(userGuessArray.includes("_") + "does include underscore userguessarray");
-                guesses = guesses - loss;
+                
                 // 
                 if (guesses < 1) {
                     document.getElementById("guesses-remaining").innerHTML = "LOST";
