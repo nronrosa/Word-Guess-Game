@@ -14,7 +14,7 @@ startGame.onclick = function () {
     document.getElementById("guesses-remaining").innerHTML = "Guesses Remaining: " + guesses;
 
     // What are the words
-    var candyBar = ["snickers", "twix", "crunch", "butterfinger", "whatchamacallit", "payday", "kitkat", "heath", "babyruth"];
+    var candyBar = ["snickers", "twix", "crunch", "butterfinger", "whatchamacallit", "payday", "kitkat", "heath", "babyruth", "rolo"];
 
     // Computer to choose word 
     var computerHangGuess = candyBar[Math.floor(Math.random() * candyBar.length)];
@@ -74,17 +74,16 @@ startGame.onclick = function () {
                 }
             }
             checkwinner()
+  
         };
 
         //Checks for winner/loser and updates the counter and text
         function checkwinner() {
             if (userGuessArray.includes("_")) {
                 // console.log(userGuessArray.includes("_") + "does include underscore userguessarray");
-                
-                // 
                 if (guesses < 1) {
                     document.getElementById("guesses-remaining").innerHTML = "LOST";
-                    document.getElementById("winner-loser").innerHTML = "LOSER";
+                    document.getElementById("winner-loser").innerHTML = "LOSER"; 
                 }
                 else {
                     document.getElementById("guesses-remaining").innerHTML = "Guesses Remaining: " + guesses;
@@ -109,5 +108,7 @@ startGame.onclick = function () {
         guesses = 10;
     }
 };
+
+
 
 

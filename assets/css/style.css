@@ -23,6 +23,7 @@
     text-align: center;
     background-color: rgb(244, 248, 248);
     background-image: url("../images/topography.png");
+    padding: 20px;
 }
 
 .gameboard-guess{
